@@ -1,31 +1,93 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Prompt:wght@300&display=swap');
+
+        h1 {
+            text-align: center;
+        }
+
+        body {
+            font-family: "Prompt",sans-serif;
+        }
+
+        .header {
+            font-size: 20px;
+            text-align: center;
+            margin: auto;
+            background-color: rgb(230, 227, 227);
+            width: 750px;
+            height: 500px;
+        }
+
+        .bmi {
+            text-align: center;
+        }
+
+        .contain {
+            background-color: whitesmoke;
+            border: 1px solid rgb(21, 102, 34);
+            border-radius: 5px;
+            width: 300px;
+            height: 100px;
+            margin: auto;
+        }
+    </style>
 </head>
+
 <body>
     <h1>BMI Calculator</h1>
-    <hr>
-    น้ำหนักตัว (kg.)
-    <br><br>
-    <input type="number" name="" id="weight">
-    <br><br>
-    ส่วนสูง (cm.)
-    <br><br>
-    <input type="number" name="" id="height">
-    <br><br>
-    <button id="calBMI">คำนวณ</button>
-    BMI
+    <hr style="width: 1000px;">
     <br>
-    <span id="bmiValue">0</span>
+
+    <div class="header">
+        <br>
+        <span style="padding-left: 20px;"> น้ำหนักตัว (kg.)</span>
+        <br><br>
+        <input type="number" name="" id="weight"
+            style="border: none; border-bottom: 1px solid rgb(56, 56, 56); width: 300px; background-color: rgb(230, 227, 227) ; ">
+        <br><br>
+        <span> ส่วนสูง (cm.)</span>
+        <br><br>
+        <input type="number" name="" id="height"
+            style="border: none; border-bottom: 1px solid rgb(56, 56, 56); width: 300px; background-color: rgb(230, 227, 227);">
+        <br><br>
+        <div>
+            <button id="calBMI" style="border-radius: 5px; 
+            width: 250px; 
+            height: 50px; 
+            border: none; 
+            background-color: rgb(147, 152, 158); ">คำนวณ
+            </button>
+            <br>
+            <br>
+
+        </div>
+        <div class="contain">
+            <br>
+            BMI
+            <br>
+            <span id="bmiValue">0</span>
+
+        </div>
+
+    </div>
+
     <br><br>
-    <span id="bmiResult">การแปลผล BMI </span>
-    
+    <div class="bmi">
+        <span id="bmiResult">การแปลผล BMI </span>
+    </div>
+
+
 
 
     <script src="./js/script12.js"></script>
 </body>
+
 </html>
