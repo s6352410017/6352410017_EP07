@@ -38,11 +38,10 @@ let total = funcWee(10, 20, 30)
 //------------------------------------
 
 function funcF(x, y = 20){
-    console.log( x+y )
+    console.log( x + y )
 }
 
 funcF(10, 100)
 funcF(50)
 
 //-----------------------------------------
-function funcE()
